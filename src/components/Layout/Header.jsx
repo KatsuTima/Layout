@@ -4,12 +4,12 @@ import classes from "./Header/Header.module.css";
 export const Header = () => {
   return (
     <>
-      <header>
-        <h1></h1>
-        <button></button>
+      <header className={classes.header}>
+        <h1>Anime Food</h1>
+        <button>Click Me</button>
       </header>
-      <div>
-        <img src={classes["meals.jpeg"]} alt="food" />
+      <div className={classes["main-image"]}>
+        <img src={headerImg} alt="food" />
       </div>
     </>
   );
