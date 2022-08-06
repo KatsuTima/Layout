@@ -1,15 +1,16 @@
-import headerImg from "../../assets/meals.jpeg";
-import classes from "./Header/Header.module.css";
-
+import React, { Fragment } from "react";
+import mealsImage from "../../assets/meals.jpeg";
+import classes from "./Header.module.css";
+import HeaderCartButton from "./HeaderCartButton";
 export const Header = () => {
   return (
     <>
-      <header>
-        <h1></h1>
-        <button></button>
+      <header className={classes.header}>
+        <h1>React Meals</h1>
+        <HeaderCartButton />
       </header>
-      <div>
-        <img src={classes["meals.jpeg"]} alt="food" />
+      <div className={classes["main-image"]}>
+        <img src={mealsImage} alt="Food" />
       </div>
     </>
   );
